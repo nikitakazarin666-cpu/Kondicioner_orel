@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Заправка и чистка кондиционеров в Орле на дому — цены от 990 руб</title>
+  <meta name="description" content="Срочная заправка фреоном, чистка и ремонт сплит-систем в Орле и Орловском районе. Выезд мастера за 30 минут. Диагностика 0 руб. Гарантия по договору!" />
+  <meta name="keywords" content="заправка кондиционера орёл, чистка кондиционера орёл, обслуживание сплит-систем орёл, ремонт кондиционера орёл" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================
+        RESET & BASE
+    ============================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background: #f8fafc;
+      color: #0f172a;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ============================
+        CSS VARIABLES
+    ============================ */
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --primary-light: #e0f2fe;
+      --accent: #f97316;
+      --accent-dark: #ea580c;
+      --navy: #0f172a;
+      --navy-light: #1e293b;
+      --grey: #f1f5f9;
+      --grey-mid: #cbd5e1;
+      --text: #334155;
+      --white: #ffffff;
+      --radius: 8px;
+      --shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.1), 0 8px 10px -6px rgba(2, 132, 199, 0.1);
+      --shadow-card: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    /* ============================
+        HEADER
+    ============================ */
+    header {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--grey);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--navy);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: var(--white);
+    }
+    .logo-text { display: flex; flex-direction: column; }
+    .logo-name {
+      font-size: 18px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+    .logo-sub {
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .header-meta {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .work-hours {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .work-hours span { color: var(--primary); font-weight: 700; }
+    .header-phone {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .header-phone:hover { color: var(--primary); }
+    .btn-header {
+      background: var(--primary);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius);
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-header:hover { background: var(--primary-dark); }
+
+    /* ============================
+        HERO SECTION
+    ============================ */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+      padding: 90px 24px 100px;
+      position: relative;
+    }
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(2, 132, 199, 0.15);
+      border: 1px solid rgba(2, 132, 199, 0.3);
+      color: #38bdf8;
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 800;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .hero h1 em { font-style: normal; color: #38bdf8; }
+    .hero-sub {
+      font-size: 18px;
+      color: #94a3b8;
+      margin-bottom: 32px;
+    }
+    .hero-sub strong { color: var(--white); font-weight: 600; }
+    .hero-bullets {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-bullet {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+    .hero-bullet span { color: #38bdf8; font-weight: bold; }
+    
+    .hero-image-wrap {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: var(--radius);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .2s, transform .15s;
+      box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
+    }
+    .btn-hero:hover {
+      background: var(--accent-dark);
+      transform: translateY(-2px);
+    }
+
+    /* ============================
+        SECTION WRAPPER
+    ============================ */
+    section { padding: 80px 24px; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 44px;
+      letter-spacing: -0.5px;
+    }
+
+    /* ============================
+        ABOUT / TRUST TEAM
+    ============================ */
+    .about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .about-img {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-card);
+    }
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .about-feat-card h4 {
+      font-size: 16px;
+      color: var(--navy);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+    .about-feat-card p {
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    /* ============================
+        SYMPTOMS SECTION
+    ============================ */
+    .symptoms { background: var(--grey); }
+    .symptoms-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .symptom-card {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.05);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .symptom-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+    .symptom-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .symptom-card h3 span { color: var(--primary); }
+    .symptom-card p { font-size: 14px; color: var(--text); }
+
+    /* ============================
+        PRICES SECTION
+    ============================ */
+    .prices { background: var(--white); }
+    .prices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .price-card {
+      background: var(--white);
+      border: 1px solid var(--grey-mid);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .price-card.featured {
+      border: 2px solid var(--primary);
+      background: linear-gradient(180deg, var(--white) 0%, #f0f9ff 100%);
+    }
+    .price-badge {
+      position: absolute;
+      top: 16px; right: 16px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+    .price-card h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 24px;
+      padding-right: 40px;
+    }
+    .price-val {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .price-val span { font-size: 14px; font-weight: 500; color: var(--text); }
+
+    /* ============================
+        QUIZ SECTION
+    ============================ */
+    .quiz { background: var(--navy); color: var(--white); }
+    .quiz h2 { color: var(--white); }
+    .quiz-box {
+      background: var(--navy-light);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: var(--radius);
+      padding: 40px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .quiz-step { display: none; }
+    .quiz-step.active { display: block; }
+    .quiz-step h3 { font-size: 20px; font-weight: 700; margin-bottom: 24px; }
+    .quiz-options { display: flex; flex-direction: column; gap: 12px; }
+    .quiz-option {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--white);
+      padding: 16px 20px;
+      border-radius: var(--radius);
+      font-size: 15px;
+      font-weight: 500;
+      text-align: left;
+      cursor: pointer;
+      transition: background .2s, border-color .2s;
+    }
+    .quiz-option:hover { background: rgba(255,255,255,0.08); border-color: var(--primary); }
+    .quiz-progress { display: flex; gap: 8px; margin-bottom: 32px; }
+    .quiz-progress-dot { height: 4px; flex: 1; background: rgba(255,255,255,0.1); border-radius: 2px; }
+    .quiz-progress-dot.done { background: var(--primary); }
+    
+    .quiz-phone-group { display: flex; flex-direction: column; gap: 16px; }
+    .quiz-phone-input {
+      background: var(--navy);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--white);
+      padding: 16px;
+      border-radius: var(--radius);
+      font-size: 16px;
+      outline: none;
+    }
+    .quiz-phone-input:focus { border-color: var(--primary); }
+    .btn-quiz {
+      background: var(--accent);
+      color: var(--white);
+      border: none;
+      padding: 16px;
+      border-radius: var(--radius);
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-quiz:hover { background: var(--accent-dark); }
+    .quiz-privacy { font-size: 12px; color: #64748b; text-align: center; }
+    .quiz-success { display: none; text-align: center; }
+    .quiz-success-icon {
+      width: 64px; height: 64px; background: var(--primary); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 28px; margin: 0 auto 24px;
+    }
+
+    /* ============================
+        REVIEWS SECTION (Живое доверие)
+    ============================ */
+    .reviews { background: var(--grey); }
+    .reviews-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+      background: var(--white);
+      padding: 16px 24px;
+      border-radius: var(--radius);
+      display: inline-flex;
+      box-shadow: var(--shadow-card);
+    }
+    .reviews-rating-num { font-size: 32px; font-weight: 800; color: var(--navy); }
+    .reviews-stars { color: #f59e0b; font-size: 20px; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+    .review-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-card);
+    }
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .review-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .review-user-info h4 { font-size: 15px; font-weight: 700; color: var(--navy); }
+    .review-date { font-size: 12px; color: #64748b; }
+    .review-text { font-size: 14px; color: var(--text); margin-bottom: 16px; }
+    .review-work-img {
+      width: 100%; height: 160px;
+      object-fit: cover;
+      border-radius: var(--radius);
+    }
+
+    /* ============================
+        GEOGRAPHY & MAP
+    ============================ */
+    .geography { background: var(--white); }
+    .geo-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+    .geo-districts { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+    .district-tag {
+      background: var(--grey); color: var(--navy);
+      padding: 6px 14px; border-radius: 4px; font-size: 13px; font-weight: 600;
+    }
+    .map-container {
+      width: 100%; height: 350px;
+      background: #e2e8f0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    /* ============================
+        FOOTER
+    ============================ */
+    footer {
+      background: var(--navy);
+      padding: 60px 24px 40px;
+      color: var(--white);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .footer-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+      align-items: flex-start; border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 40px; margin-bottom: 30px;
+    }
+    .footer-phone { font-size: 24px; font-weight: 700; color: var(--white); text-decoration: none; display: inline-block; margin-bottom: 8px;}
+    .footer-legal { font-size: 12px; color: #64748b; line-height: 1.8; }
+    .footer-copy { font-size: 13px; color: #475569; text-align: center; }
+
+    @media (max-width: 768px) {
+      .hero-inner, .about-grid, .geo-inner, .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-image-wrap { order: -1; }
+      .work-hours { display: none; }
+      section { padding: 56px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <div class="logo-icon">❄️</div>
+        <div class="logo-text">
+          <span class="logo-name">Орёл-Климат</span>
+          <span class="logo-sub">Технический сервис</span>
+        </div>
+      </a>
+      <div class="header-meta">
+        <div class="work-hours">Прием заявок: <span>8:00–21:00</span></div>
+        <a href="tel:+79XXXXXXXXXX" class="header-phone">+7 (9XX) XXX-XX-XX</a>
+        <a href="#quiz" class="btn-header">Вызвать мастера</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Срочный выезд по Орлу и району в день обращения</div>
+        <h1>Профессиональная заправка и чистка кондиционеров в <em>Орле</em> от 990 ₽</h1>
+        <p class="hero-sub">Оперативный выезд сертифицированного мастера к вам домой или в офис. <strong>Диагностика системы — 0 ₽</strong> при выполнении работ.</p>
+        <div class="hero-bullets">
+          <div class="hero-bullet"><span>✓</span> Полная гарантия на хладагент и работу до 12 месяцев</div>
+          <div class="hero-bullet"><span>✓</span> Используем только сертифицированный фреон R410A / R22</div>
+          <div class="hero-bullet"><span>✓</span> Чистота после проведения работ — мастер работает в бахилах</div>
+        </div>
+        <a href="#quiz" class="btn-hero">Рассчитать стоимость и закрепить скидку</a>
+      </div>
+      <div class="hero-image-wrap">
+        <!-- Рекомендуемое фото: Мастер заправляет кондиционер на фасаде здания -->
+        <img src="images/hero-master.jpg" alt="Мастер заправляет кондиционер в Орле" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=400&q=80'">
+      </div>
+    </div>
+  </section>
+
+  <!-- О КОМПАНИИ / ДОВЕРИЕ -->
+  <section class="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <!-- Рекомендуемое фото: Опрятная бригада мастеров на фоне рабочего автомобиля -->
+        <img src="images/our-team.jpg" alt="Команда мастеров Орёл-Климат" class="about-img" onerror="this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=500&q=80'">
+        <div class="about-content">
+          <div class="section-label">О нашей команде</div>
+          <h2>Работаем на совесть. Без скрытых накруток и посредников</h2>
+          <p style="color: var(--text); margin-bottom: 20px;">Мы — профильная местная бригада мастеров. Занимаемся обслуживанием климатических систем в Орле уже более 5 лет. Располагаем профессиональным инструментом для точного поиска утечек фреона и дезинфекции кондиционеров.</p>
+          
+          <div class="about-features">
+            <div class="about-feat-card">
+              <h4>Фиксированная цена</h4>
+              <p>Озвучиваем стоимость ремонта до начала работ по прайсу. Она не изменится в процессе.</p>
+            </div>
+            <div class="about-feat-card">
+              <h4>Официальный договор</h4>
+              <p>Выдаем акт выполненных работ с печатью и прописанными условиями гарантии.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СИМПТОМЫ -->
+  <section class="symptoms">
+    <div class="section-inner">
+      <div class="section-label">Проблемы с техникой</div>
+      <h2>Когда сплит-системе срочно нужно ТО?</h2>
+      <div class="symptoms-grid">
+        <div class="symptom-card">
+          <h3><span>→</span> Не холодит</h3>
+          <p>Воздух идет, но комната не охлаждается. Скорее всего, уровень фреона упал ниже критической отметки.</p>
+        </div>
+        <div class="symptom-card">
+          <h3><span>→</span> Неприятный запах</h3>
+          <p>Из кондиционера пахнет сыростью или плесенью. Требуется срочная глубокая антибактериальная обработка.</p>
+        </div>
+        <div class="symptom-card">
+          <h3><span>→</span> Капает вода</h3>
+          <p>Внутренний блок «плачет» прямо на стену из-за забившегося дренажа. Поможет механическая прочистка.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЦЕНЫ -->
+  <section class="prices">
+    <div class="section-inner">
+      <div class="section-label">Прозрачный прайс-лист</div>
+      <h2>Честные цены без маркетинговых уловок</h2>
+      <div class="prices-grid">
+        <div class="price-card">
+          <h3>Антибактериальная чистка (внутренний + внешний блок)</h3>
+          <div class="price-val">от 1 490 <span>₽</span></div>
+        </div>
+        <div class="price-card">
+          <h3>Дозаправка качественным хладагентом (за 100 грамм)</h3>
+          <div class="price-val">350 <span>₽</span></div>
+        </div>
+        <div class="price-card featured">
+          <div class="price-badge">Выгодно</div>
+          <h3>Комплексное сезонное ТО (Чистка + Дозаправка фреоном)</h3>
+          <div class="price-val">от 2 490 <span>₽</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz" id="quiz">
+    <div class="section-inner">
+      <div class="section-label">Онлайн-расчет за 1 минуту</div>
+      <h2>Ответьте на 2 вопроса и узнайте точную стоимость ТО</h2>
+      <div class="quiz-box">
+        <div class="quiz-progress">
+          <div class="quiz-progress-dot done" id="dot1"></div>
+          <div class="quiz-progress-dot" id="dot2"></div>
+          <div class="quiz-progress-dot" id="dot3"></div>
+        </div>
+
+        <!-- Шаг 1 -->
+        <div class="quiz-step active" id="step1">
+          <h3>1. Какая у вас модель кондиционера или площадь помещения?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="nextStep(2, 'Обычный домашний (до 25 кв.м.)')">Обычный домашний (до 25 кв.м.)</button>
+            <button class="quiz-option" onclick="nextStep(2, 'Средний / Офисный (до 50 кв.м.)')">Средний / Офисный (до 50 кв.м.)</button>
+            <button class="quiz-option" onclick="nextStep(2, 'Мощный / Полупромышленный')">Мощный / Полупромышленный</button>
+          </div>
+        </div>
+
+        <!-- Шаг 2 -->
+        <div class="quiz-step" id="step2">
+          <h3>2. Какая главная проблема на текущий момент?</h3>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="nextStep(3, 'Плохо охлаждает / Нужна заправка')">Плохо охлаждает / Нужна заправка</button>
+            <button class="quiz-option" onclick="nextStep(3, 'Идет запах / Нужна чистка')">Идет сильный запах / Нужна чистка</button>
+            <button class="quiz-option" onclick="nextStep(3, 'Просто плановое обслуживание')">Просто плановое обслуживание перед сезоном</button>
+          </div>
+        </div>
+
+        <!-- Шаг 3 -->
+        <div class="quiz-step" id="step3">
+          <h3>3. Введите ваш телефон для закрепления цены и скидки 15%</h3>
+          <div class="quiz-phone-group">
+            <input type="tel" class="quiz-phone-input" id="phoneInput" placeholder="+7 (___) ___-__-__" />
+            <input type="hidden" id="hidden_type" name="type" value="">
+            <input type="hidden" id="hidden_problem" name="problem" value="">
+            
+            <button class="btn-quiz" onclick="submitQuiz()">Получить точную стоимость</button>
+            <p class="quiz-privacy">Мастер перезвонит в течение 5 минут. Ваши данные конфиденциальны.</p>
+          </div>
+        </div>
+
+        <!-- Успех -->
+        <div class="quiz-success" id="quizSuccess">
+          <div class="quiz-success-icon">✓</div>
+          <h3>Заявка успешно принята!</h3>
+          <p>Специалист уже производит расчет по вашим параметрам и свяжется с вами в течение 5 минут.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОТЗЫВЫ (Доверие) -->
+  <section class="reviews">
+    <div class="section-inner">
+      <div class="section-label">Отзывы клиентов</div>
+      <h2>Что говорят жители Орла о нашей работе</h2>
+      
+      <div class="reviews-meta">
+        <div class="reviews-rating-num">5.0</div>
+        <div>
+          <div class="reviews-stars">★★★★★</div>
+          <div style="font-size: 13px; color: var(--text);">Рейтинг на Яндекс Картах на основе 48 отзывов</div>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Отзыв 1 -->
+        <div class="review-card">
+          <div class="review-header">
+            <!-- Рекомендуемое фото: Аватар пользователя (клиента) -->
+            <img src="images/user-1.jpg" alt="Иван К." class="review-avatar" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=100&q=80'">
+            <div class="review-user-info">
+              <h4>Иван К. (ул. Октябрьская)</h4>
+              <div class="review-date">14 мая 2026</div>
+            </div>
+          </div>
+          <p class="review-text">Кондиционер перестал дуть холодным перед самым началом жары. Ребята приехали в тот же день в Советский район. Замерили давление, дозаправили фреоном, вышло около 300 грамм. Всё заработало как новое. Цена полностью совпала с тем, что сказали по телефону.</p>
+          <!-- Рекомендуемое фото: Результат чистки кондиционера -->
+          <img src="images/review-work-1.jpg" alt="Процесс заправки" class="review-work-img" onerror="this.src='https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=300&q=80'">
+        </div>
+
+        <!-- Отзыв 2 -->
+        <div class="review-card">
+          <div class="review-header">
+            <!-- Рекомендуемое фото: Аватар пользователя (клиента) -->
+            <img src="images/user-2.jpg" alt="Мария С." class="review-avatar" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80'">
+            <div class="review-user-info">
+              <h4>Мария С. (Микрорайон)</h4>
+              <div class="review-date">28 мая 2026</div>
+            </div>
+          </div>
+          <p class="review-text">Заказывала комплексную чистку сплит-системы, так как появился ужасный запах сырости. Мастер разобрал внутренний блок, обработал всё специальной пеной и промыл керхером (использовал защитный пакет, стены чистые). Запах ушел, воздух свежий! Рекомендую.</p>
+          <!-- Рекомендуемое фото: Чистый внутренний блок кондиционера -->
+          <img src="images/review-work-2.jpg" alt="Чистый кондиционер" class="review-work-img" onerror="this.src='https://images.unsplash.com/photo-1621905252507-b354bc25edac?auto=format&fit=crop&w=300&q=80'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ГЕОГРАФИЯ -->
+  <section class="geography">
+    <div class="section-inner">
+      <div class="geo-inner">
+        <div class="geo-text">
+          <div class="section-label">Зона обслуживания</div>
+          <h2>Выезжаем по всему городу без наценки за километраж</h2>
+          <p>Наши мастера ежедневно распределены по районам города, что позволяет сократить время ожидания до 30-40 минут с момента звонка.</p>
+          <div class="geo-districts">
+            <span class="district-tag">Советский район</span>
+            <span class="district-tag">Заводской район</span>
+            <span class="district-tag">Северный район</span>
+            <span class="district-tag">Железнодорожный район</span>
+            <span class="district-tag">Знаменка</span>
+            <span class="district-tag">Образцово</span>
+            <span class="district-tag">Выгонка</span>
+          </div>
+        </div>
+        <!-- Интерактивная карта (Заглушка, готовая под API Яндекс Карт или статичную картинку) -->
+        <div class="map-container">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=36.063520%2C52.968212&z=12&l=map" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative; border:0;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3 style="font-size: 20px; margin-bottom: 12px; font-weight: 800;">Орёл-Климат</h3>
+        <p style="color: #64748b; font-size: 14px; margin-bottom: 16px;">Профессиональный ремонт и обслуживание климатических систем в Орловской области.</p>
+        <a href="tel:+79XXXXXXXXXX" class="footer-phone">+7 (9XX) XXX-XX-XX</a>
+        <p style="font-size: 13px; color: var(--primary);">Прием звонков и заявок с 8:00 до 21:00</p>
+      </div>
+      <div class="footer-legal">
+        <p><strong>Юридическая информация:</strong></p>
+        <p>Информация на сайте носит ознакомительный характер и не является публичной офертой.</p>
+        <p>Выезд мастера, диагностика и замеры осуществляются бесплатно при условии последующего выполнения ремонтных или сервисных работ нашей бригадой.</p>
+        <p style="margin-top: 10px; color: #475569;">ИНН: 575XXXXXXXXX | ОГРНИП: 32157XXXXXXXXXX</p>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Орёл-Климат. Все права защищены. Разработка и продвижение: Bot Site PRO</div>
+  </footer>
+
+  <!-- QUIZ LOGIC -->
+  <script>
+    let quizData = {};
+
+    function nextStep(step, val) {
+      if(step === 2) quizData.type = val;
+      if(step === 3) quizData.problem = val;
+
+      document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+      document.getElementById('step' + step).classList.add('active');
+      
+      for (let i = 1; i <= step; i++) {
+        document.getElementById('dot' + i).classList.add('done');
+      }
+    }
+
+    function submitQuiz() {
+      const phone = document.getElementById('phoneInput').value.trim();
+      if (!phone || phone.length < 18) {
+        document.getElementById('phoneInput').style.borderColor = '#f97316';
+        document.getElementById('phoneInput').focus();
+        return;
+      }
+      
+      document.getElementById('hidden_type').value = quizData.type || '';
+      document.getElementById('hidden_problem').value = quizData.problem || '';
+
+      console.log("Данные для отправки:", {
+        phone: phone,
+        type: quizData.type,
+        problem: quizData.problem
+      });
+
+      document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.quiz-progress-dot').forEach(el => el.classList.add('done'));
+      document.getElementById('quizSuccess').style.display = 'block';
+    }
+
+    // Простая маска телефона
+    const phoneInput = document.getElementById('phoneInput');
+    phoneInput.addEventListener('input', function(e) {
+      this.style.borderColor = '';
+      let val = this.value.replace(/\D/g, '');
+      if (val.startsWith('7') || val.startsWith('8')) val = val.slice(1);
+      let formatted = '';
+      if (val.length > 0) formatted = '+7 (' + val.slice(0, 3);
+      if (val.length >= 4) formatted += ') ' + val.slice(3, 6);
+      if (val.length >= 7) formatted += '-' + val.slice(6, 8);
+      if (val.length >= 9) formatted += '-' + val.slice(8, 10);
+      this.value = formatted;
+    });
+  </script>
+</body>
+</html>
